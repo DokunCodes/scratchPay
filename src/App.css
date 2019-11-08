@@ -1,22 +1,21 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #245CA6;
 }
 
-.App-link {
-  color: #09d3ac;
+.navbar img{
+  float: left;
+  max-width: 150px;
+}
+
+.navbar .logout{
+  float: right;
 }
