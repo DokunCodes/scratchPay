@@ -25,8 +25,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://theagromall.com/">
-        Theagromall
+      <Link color="inherit" href="https://scratchpay.com/">
+        Scratchpay
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -49,8 +49,8 @@ const styles = theme => ({
     },
     logo: {
       margin: theme.spacing(1),
-      maxWidth: 300,
-    
+      width: 100,
+      height: 100,
     },
     form: {
       width: '100%', // Fix IE 11 issue.
@@ -92,14 +92,14 @@ class Login extends Component {
   /**
    * @param {e}
    * Validate login
-   * Email: test@theagromall.com
-   * Password: secret
+   * Email: admin@scratchpay.com
+   * Password: Secret
    */
 
   login = (e) =>{
     e.preventDefault();
     this.setState({ loading: true })
-    if(this.state.email !== 'test@theagromall.com' && this.state.password !== 'secret'){
+    if(this.state.email !== 'admin@scratchpay.com' && this.state.password !== 'secret'){
       this.setState({opensnack:true, message: 'Invalid email & password combination', loading: false})
 
       setTimeout (()=>{ this.setState({opensnack:false})},3000);
@@ -120,7 +120,7 @@ class Login extends Component {
             <Container maxWidth="xs">
               <CssBaseline />
               <div className={classes.paper}>
-              <img alt="scratch pay logo" src="/logo.png" className={classes.logo} />
+              <img alt="scratch pay logo" src="/paw_symbol.png" className={classes.logo} />
                 <Typography component="h1" variant="h5">
                   Sign in
                 </Typography>
