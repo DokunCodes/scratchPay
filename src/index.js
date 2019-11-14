@@ -7,12 +7,12 @@ import App from './App';
 const theme = createMuiTheme({
     palette: {
         primary: {
-            light: '#A3C7ED',
-            main: '#245CA6',
-            dark: '#212445'
+            light: '#4f8d2d',
+            main: '#52b41e',
+            dark: '#52b41e'
          },
          secondary: {
-           main: '#241F21',
+           main: '#294919',
          },
     },
     typography: { 
